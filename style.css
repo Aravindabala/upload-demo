@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+MX:wght@100..400&display=swap');
+
+* {
+    font-family: 'DM Sans';
+}
+:root{
+    --white:#fff;
+    --btn-txt-clr:#000;
+    --icn-clr:#007aff;
+    --up-ar:#b1b5d1;
+    --bg-clr:#f5f7ff;
+    --nav-clr:#5056d2;
+    --body-cont:#fbfcfe;
+    --drag-clr:#f1f2f6;
+    --bs-border-color-translucent: #00000010;
+    /* demo */
+    --bg-demo:#f3f7ff;
+    --txt-demo:#565353;
+}   
+.bg-img {
+    background-size: cover;
+    min-height:10vh;
+    position: relative;
+    color: var(--white);
+  }
+.nav-icn{
+    font-size: 35px;
+}
+.nav-txt{
+    margin-top: -2.2rem;
+    margin-left: 4% !important;
+}
+.nav-btn{
+    color:var(--btn-txt-clr);
+    font-weight: 600;
+    border-radius: 9px;
+    font-size: 18px;
+    --bs-btn-border-color:var(--nav-clr) ;
+    --bs-border-width: 1.6px; 
+}
+.nav-btn::after:active{
+    background-color: var(--nav-clr);
+}
+.nav-arr-icn{
+    color: var(--up-ar);
+    font-size: 12px;
+    margin-left: 35px;
+}
+ .nav-arr-icn:hover{
+    color: var(--white);
+}
+.main{
+    background-color: var(--bg-clr);
+    background-size: cover;
+    height: 75vh;
+}
+.body-cont{
+    height:65vh;
+    background-color:var(--body-cont) ;
+    background-size: cover;
+    border-radius: 15px;
+    width:65rem;
+}
+.break{
+    display: block;
+}
+.bd-txt{
+    font-size: 18px;
+    color: var(--btn-txt-clr);
+    font-weight: 500;
+}
+.cont-drag{
+    background-color:var(--drag-clr);
+    height: 16vh;
+    width: 59rem;
+    border-radius: 10px;
+}
+.drg-icn{
+    font-size:350%;
+    color: var(--up-ar);
+    cursor: pointer;
+}
+.drg-btn{
+    margin-top:-3.5rem;
+}
+.drg-txt{
+    margin-top: -7.4%;
+    margin-left:9% !important;
+}
+.sub-drg{
+    margin-left:11% !important;
+}
+.file-btn{
+    background-color: var(--white);
+    color: var(--btn-txt-clr);
+    border-radius: 9px;
+    font-weight: 600;
+    --bs-btn-padding-x: 2.75rem;
+    --bs-btn-padding-y: 0.7rem;
+}  
+.pdf-icn{
+    font-size:250%;
+    color: var(--up-ar);
+} 
+.pdf-txt{
+    margin-top: -2.5rem;
+    font-weight: 600;
+}
+.dlt-icn{
+    margin-top: -20px;
+    font-size: 130%;
+    color: var(--up-ar);
+    margin-right:-5% !important;
+}
+.upload-btn{
+    --bs-btn-padding-x: 2.75rem;
+    --bs-btn-padding-y: 0.7rem;
+}
+/* demo */
+.hd{
+  color:var(--white);
+}
+a{
+    text-decoration: none;
+}
+.icon{
+    font-size: 33px;
+    color: var(--icn-clr);
+    /* color: linear-gradient(to left,#3226b7, #007aff);  */
+}
+.icon-b{
+    font-size: 29px;
+    color: var(--icn-clr);
+}
+.card{
+    --bs-card-spacer-y: 11px;
+    --bs-card-spacer-x: 11px;
+    border-radius: 15px;
+    width: 115%;
+    background-color:var(--bg-demo);
+}
+.card-active{
+    --bs-card-spacer-y: 11px;
+    --bs-card-spacer-x: 11px;
+    border-radius: 15px;
+    width: 115%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.txt-active{    
+    display: block;
+    max-height: 2.3rem;
+    box-sizing: border-box;
+    font-size: 0.98rem;
+    font-weight: 500;
+}
+.txt{
+    display: block;
+    max-height: 2.3rem;
+    box-sizing: border-box;
+    font-size: 0.98rem;
+    font-weight: 500;
+    color:var(--txt-demo);   
+}
+.card-b{
+    --bs-card-spacer-y: 13px;
+    --bs-card-spacer-x: 15px;
+    border-radius: 15px;
+    width: 115%;
+    background-color: var(--bg-demo);
+}
+.txt-b{
+    display: block;
+    max-height: 2.3rem;
+    box-sizing: border-box;
+    font-size: 0.98rem;
+    font-weight: 500;
+    color:var(--txt-demo);   
+}
+.rgt{
+    position: relative;
+    cursor: pointer;
+    margin: 0 17px;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+}
+.ar{
+    position: absolute;
+    right: -15px;
+    top: -27px;
+}
+.up{
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    margin: 0 17px;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+}
+.arr2{
+    position: absolute;
+    right: -20px;
+    top: -27px;
+    color: var(--up-ar); 
+}
+.ml{
+    margin-left: -8%;
+    margin-right: -7%;
+}
+.modal-content{
+    height:29rem;
+    width:140%;
+    z-index: 1000;
+    border: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.modal{
+    --bs-modal-width: 520px;
+    --bs-modal-padding: 3%;
+}
+.modal-backdrop {
+    --bs-backdrop-opacity: 0.2;
+    top: 77px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        margin-right: 16rem;
+        margin-top: 4.3rem;
+    }
+}
